@@ -1,0 +1,123 @@
+header {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.7rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgcon {
+    width: 4rem;
+    height: 5rem;
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fontawesomehead {
+    width: 100%;
+    height: 100%;
+    color: #006FFF;
+}
+
+.buttoncon {
+    width: auto;
+    margin-right: 2rem;
+}
+
+.buttoncon button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: #006FFF;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    position: relative;
+}
+
+/* 4D2DB7 bg website */
+
+.nav-list li a:hover {
+    color: #006FFF;
+}
+
+.nav-list a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E;
+    width: 150px;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    color: #006FFF;
+}
+
+.icon{
+    color: white;
+    width: 3.6rem;
+    display: flex;
+    padding-right: 2rem;
+}
+
+.icon:hover{
+    color: #006FFF;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .nav-list {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+
+    .imgcon,
+    .buttoncon {
+        display: none;
+    }
+}
