@@ -1,53 +1,91 @@
-import "./skills.css";
-import Python from "./img/Python.webp";
-import Lua from "./img/Lua.webp";
-import HTML from "./img/HTML.webp";
-import CSS from "./img/CSS.webp";
-import Php from './img/Php.webp';
+import React from 'react';
+import './skills.css'; // Make sure to import your CSS file
 
-// Want to learn/Learning:
-import Raect from './img/React.webp';
-import CPlusPlus from './img/cPlusPlus';
-import Laravel from './img/Laravel';
+const javascript = '/img/JS.webp';   
+const python = '/img/Python.webp';   
+const php = '/img/Php.webp';         
+const lua = '/img/Lua.webp';  
+const css = '/img/css.webp';  
+const html = '/img/html.webp';
+const react = '/img/react.webp';
+const c = '/img/c++.webp';
 
 function Skills() {
     return (
-        <section className="about">
-            <ul class="about__container">
-                <li class="about__content">
-                    <div class="about__contentImgContainer">
-                        <img class="about__contentIMG" src={} alt=""/>
+        <section className="skills">
+            <ul className="skills__container">
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={javascript} alt="" />
                     </div>
-                    <div class="about__contentTextArea">
-                        <h1 class="about__contentTitle"></h1>
-                        <p class="about__contentInfo"></p>
-                    </div>
-                </li>
-                <li class="about__content">
-                    <div class="about__contentImgContainer">
-                        <img class="about__contentIMG" src={} alt=""/>
-                    </div>
-                    <div class="about__contentTextArea">
-                        <h1 class="about__contentTitle"></h1>
-                        <p class="about__contentInfo"></p>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">JavaScript</h1>
+                        <p className="skills__contentInfo">I fully understand this coding language.</p>
                     </div>
                 </li>
-                <li class="about__content">
-                    <div class="about__contentImgContainer">
-                        <img class="about__contentIMG" src={} alt=""/>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={python} alt="" />
                     </div>
-                    <div class="about__contentTextArea">
-                        <h1 class="about__contentTitle"></h1>
-                        <p class="about__contentInfo"></p>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">Python</h1>
+                        <p className="skills__contentInfo">I fully understand this coding language.</p>
                     </div>
                 </li>
-                <li class="about__content">
-                    <div class="about__contentImgContainer">
-                        <img class="about__contentIMG" src={} alt=""/>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={php} alt="" />
                     </div>
-                    <div class="about__contentTextArea">
-                        <h1 class="about__contentTitle"></h1>
-                        <p class="about__contentInfo"></p>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">PHP</h1>
+                        <p className="skills__contentInfo">I'm still learning this language.</p>
+                    </div>
+                </li>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={lua} alt="" />
+                    </div>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">Lua</h1>
+                        <p className="skills__contentInfo">I'm still practicing with this language.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul className="skills__container">
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={css} alt="" />
+                    </div>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">CSS</h1>
+                        <p className="skills__contentInfo">I fully understand this coding language.</p>
+                    </div>
+                </li>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={react} alt="" />
+                    </div>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">React</h1>
+                        <p className="skills__contentInfo">I fully understand this coding language.</p>
+                    </div>
+                </li>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={html} alt="" />
+                    </div>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">HTML</h1>
+                        <p className="skills__contentInfo">I fully understand this coding language.</p>
+                    </div>
+                </li>
+                <li className="skills__content skills__content--flipped">
+                    <div className="skills__contentImgContainer">
+                        <img className="skills__contentIMG" src={c} alt="" />
+                    </div>
+                    <div className="skills__contentTextArea">
+                        <h1 className="skills__contentTitle">C++</h1>
+                        <p className="skills__contentInfo">A coding language i would love to learn and understand.</p>
                     </div>
                 </li>
             </ul>
@@ -55,4 +93,4 @@ function Skills() {
     );
 }
 
-export default About;
+export default Skills;

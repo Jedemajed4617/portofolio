@@ -9,9 +9,9 @@ function Home() {
                         <h1 class="eerste">My name is,</h1>
                         <div class="tranq">
                             <h1 class="tweede">Tygo Jedema</h1>
-                            <h1 class="derde">I am a specialized</h1>
+                            <h1 class="derde">I am a </h1>
                         </div>
-                        <h1 class="vierde">Fullstack Student Developer</h1>
+                        <h1 class="vierde">Fullstack Developer</h1>
                     </div>
                 </div>
             </div>
